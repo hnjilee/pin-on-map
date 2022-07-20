@@ -5,15 +5,21 @@ const vertical = document.querySelector('.vertical');
 const pin = document.querySelector('.pin');
 const coordinates = document.querySelector('.coordinates');
 
+addEventListener('load', () => {
+  const centerX = parseInt(window.innerWidth / 2);
+  const centerY = parseInt(window.innerHeight / 2);
+  update(centerX, centerY);
+});
+
 addEventListener('mousemove', e => {
-  const x = e.clientX;
-  const y = e.clientY;
+  const x = parseInt(e.clientX);
+  const y = parseInt(e.clientY);
   update(x, y);
 });
 
 addEventListener('click', e => {
-  const x = e.clientX;
-  const y = e.clientY;
+  const x = parseInt(e.clientX);
+  const y = parseInt(e.clientY);
   fix(x, y);
 });
 
