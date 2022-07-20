@@ -3,11 +3,11 @@ body {
   height: 100vh;
   margin: 0;
   background: url('images/map.jpg') no-repeat center/cover;
+  overflow: hidden;
 }
 
 .horizontal {
   position: absolute;
-  top: 50%;
   left: 0;
   width: 100%;
   border-top: dotted 1px black;
@@ -16,22 +16,19 @@ body {
 .vertical {
   position: absolute;
   top: 0;
-  left: 50%;
   height: 100%;
   border-left: dotted 1px black;
 }
 
 .pin {
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translateY(-100%);
 }
 
 .coordinates {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(50%, -100%);
+  transform: translateY(-100%);
+  margin-left: 40px;
   font-size: 2rem;
+  white-space: nowrap;
 }
