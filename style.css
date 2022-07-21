@@ -8,26 +8,22 @@ body {
 
 .horizontal {
   position: absolute;
-  left: 0;
   width: 100%;
   border-top: dotted 1px black;
 }
 
 .vertical {
   position: absolute;
-  top: 0;
   height: 100%;
   border-left: dotted 1px black;
 }
 
 .pin {
   position: absolute;
-  transform: translateY(-100%);
 }
 
 .coordinates {
   position: absolute;
-  transform: translateY(-100%);
   margin-left: 40px;
   font-size: 2rem;
   white-space: nowrap;
