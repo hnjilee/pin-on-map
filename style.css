@@ -1,0 +1,39 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: url(images/map.jpg) center/cover no-repeat;
+  overflow: hidden;
+}
+
+.horizontal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.vertical {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: white;
+}
+
+.pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-100%);
+}
+
+.coordinates {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(25px, -100%);
+  font-size: 1.5rem;
+}
